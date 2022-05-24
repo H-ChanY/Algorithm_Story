@@ -50,9 +50,9 @@ BFS는 한국어로는 넓이 우선 탐색이라고 한다.
     * 물론 DFS로 찾을 수 있지만 그게 최단 거리인지는 확인할 수 없음.
 
 
-
+## DFS
 ```
-#
+# DFS
 graph ={
   1: [2,3,4],
   2: [5],
@@ -85,5 +85,28 @@ def iterative_dfs(start_v):
   return visited
 
 ```
+## BFS
+```
+# BFS
+graph = {
+    1: [2,3,4],
+    2: [5],
+    3: [5],
+    4: [],
+    5: [6,7],
+    6: [],
+    7: [3],
+}
 
+def bfs(start_v):
+    visited = [start_v]
+    queue = [start_v]
+    while queue:
+        v = queue.pop(0)
+        for w in graph[v]:
+            if w not in visited:
+                visited.append(w)
+                queue.append(w)
+    return visited
 
+```
