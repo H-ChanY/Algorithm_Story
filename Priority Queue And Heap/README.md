@@ -33,5 +33,6 @@
     * 최대 힙(MAX HEAP)
         1. 부모 노드의 키 값이 자식노드보다 크거나 같은 완전 이진트리이다. 
         2. key(부모노드) ≥ key(자식노드) 
-        
+        ![maxheap](https://user-images.githubusercontent.com/71515744/170233112-8ba7c783-0ada-4c6f-b92e-d754d9f36753.png)
+
 참조 https://suyeon96.tistory.com/31
