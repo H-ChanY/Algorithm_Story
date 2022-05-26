@@ -11,7 +11,7 @@
     
 ![5tVTziM](https://user-images.githubusercontent.com/71515744/170421422-506c8d00-c7ec-449f-a1d8-ae73b2a3a67c.png)
     
-* Max Heapify로 가정
+* Max Heapify로 가정Cancel changes
 * 부모 노드에 있는 4는 14보다 작기 때문에 왼쪽으로 온다. 
 * 2보다 크고 8보다 작기 때문에 4와 8자리를 교환
 * 확인할 자식노드가 없으므로 연산 종료
@@ -55,9 +55,9 @@ def heapify(unsorted, index, heap_size):
     12,30,6,7,4,13,8,11,50,24,2,5,10
     ```
 * build heap 하는 가장 단순한 방법 
-1. 비어있는 힙 구조에 차례로 insert 한다.
-2. 마지막 요소를 insert 할 때 힙 구조를 구성하고 잇는 노드는 n-1개이다. 
-3. insert의 계산 복잡도는 O(lg n)이고
-4. 총 n번 반복해야하므로 n*O(lg n)이다.
+    1. 비어있는 힙 구조에 차례로 insert 한다.
+    2. 마지막 요소를 insert 할 때 힙 구조를 구성하고 잇는 노드는 n-1개이다. 
+    3. insert의 계산 복잡도는 O(lg n)이고
+    4. 총 n번 반복해야하므로 n*O(lg n)이다.
   
   
