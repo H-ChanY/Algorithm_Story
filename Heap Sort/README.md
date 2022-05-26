@@ -17,8 +17,6 @@
     * 확인할 자식노드가 없으므로 연산 종료
     
 ```
-<p>
-<p>
 def heapify(unsorted, index, heap_size):
     largest = index
     left_index = 2 * index + 1
@@ -34,24 +32,21 @@ def heapify(unsorted, index, heap_size):
 
     * heapify의 계산복잡성은 최악의 경우 루트노드에서 잎새노드까지 값을 비교해야 하므로 트리의 높이 O(h=lg n)에 의존적
     * 값을 비교하거나 바꾸는 연산은 O(1)이므로 결과적으로 heapify의 계산복잡성은 O(lg n)이다.
-<p>
-<p>
+  
 ## insert 
 
     * 힙은 자료구조의 일종이므로 삽입 연산이 가능해야함. 
     * 삽입을 할 때 마지막 레벨의 비어있는 제일 왼쪽 노드에 삽입 시켜줌.
     * 삽입을 하면 heapify의 속성이 깨질 수 있음. 확인해서 힙 속성을 맞춰줘야함. 
     * 시간 복잡도 O(lg n)
-
-<p>
-<p>
+  
 ## delete
     
     * 지우고 싶은 값이 중간에 있으면 어떻게 해야할까?
     * 마지막 레벨의 마지막 인덱스에 있는 값을 지우고 싶은 노드에 넣어준다.
     * 그러고 난 뒤 다시 힙 속성이 깨지지 않도록 heapify를 해준다. 
-<p>
-<p>
+
+  
 ## Build Heap
   
   
