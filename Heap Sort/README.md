@@ -55,6 +55,8 @@ def heapify(unsorted, index, heap_size):
     12,30,6,7,4,13,8,11,50,24,2,5,10
     ```
 * build heap 하는 가장 단순한 방법 
+
+
     1. 비어있는 힙 구조에 차례로 insert 한다.
     2. 마지막 요소를 insert 할 때 힙 구조를 구성하고 잇는 노드는 n-1개이다. 
     3. insert의 계산 복잡도는 O(lg n)이고
