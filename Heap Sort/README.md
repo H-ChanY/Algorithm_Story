@@ -61,5 +61,49 @@ def heapify(unsorted, index, heap_size):
     2. 마지막 요소를 insert 할 때 힙 구조를 구성하고 잇는 노드는 n-1개이다. 
     3. insert의 계산 복잡도는 O(lg n)이고
     4. 총 n번 반복해야하므로 n*O(lg n)이다.
+   
+![BxjApth](https://user-images.githubusercontent.com/71515744/170511560-68290773-1acb-47be-b1da-bc84e2495dcb.png)
+![C4fKSXE](https://user-images.githubusercontent.com/71515744/170511676-e4a039bf-20c6-4628-af2e-6591e5be5099.png)
+![VSAz5w1](https://user-images.githubusercontent.com/71515744/170511774-e6db8f24-78cd-4833-9b42-587332b5d20b.png)
+
+
+## 힙 정렬
+
+1. 시작은 n/2의 인덱스에서 확인한다.
+2. heapify가 만족하는지 확인
+3. heapify가 만족하지 않는다면 자리 바꿈
+4. 바뀐 노드가 heapify 만족하는지 확인.
+
+```
+def heap_sort(unsorted):
+    n = len(unsorted)
+    # BUILD-MAX-HEAP (A) : 위의 1단계
+    # 인덱스 : (n을 2로 나눈 몫-1)~0
+    # 최초 힙 구성시 배열의 중간부터 시작하면 
+    # 이진트리 성질에 의해 모든 요소값을 
+    # 서로 한번씩 비교할 수 있게 됨 : O(n)
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(unsorted, i, n)
+    # Recurrent (B) : 2~4단계
+    # 한번 힙이 구성되면 개별 노드는
+    # 최악의 경우에도 트리의 높이(logn)
+    # 만큼의 자리 이동을 하게 됨
+    # 이런 노드들이 n개 있으므로 : O(nlogn)
+    for i in range(n - 1, 0, -1):
+        unsorted[0], unsorted[i] = unsorted[i], unsorted[0]
+        heapify(unsorted, 0, i)
+    return unsorted
+```
   
   
+  
+  
+참조 https://ratsgo.github.io/data%20structure&algorithm/2017/09/27/heapsort/
+
+
+
+
+
+
+
+
