@@ -103,3 +103,21 @@ https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html
     * 단점
         1. 정렬된 리스트에 대해서는 퀵 정렬의 불균형 분할에 의해 오히려 수행시간이 더 많이 걸림.
         
+## 의사 결정 코드
+  
+```  
+QUICKSORT(A,p,r)
+      q= partiton(A,p,r)
+      QUICKSORT(A,p,q-1)
+      QUICKSORT(A,q-1,r)
+        
+PARTITION(A,p,r)
+x=A[r]
+i=p-1
+for j=p to r-1
+      if A[j]<=x
+            i=i+1
+            exchange A[i] with A[j]
+exchange A[i+1] with A[r]
+return i+1
+```
