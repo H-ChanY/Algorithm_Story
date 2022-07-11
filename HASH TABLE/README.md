@@ -50,6 +50,7 @@
         * Linear Probing: 현재 버킷 index로부터 고정폭 만큼씩 이동하여 차례대로 검색 -> 비어 있는 버킷에 데이터 저장
         * Quadratic Probing: 해시의 저장순서 폭을 제곱으로 저장. 충돌 발생시 1만큼 이동 또 충돌 2^2 3^2 씩 옮김
         * Double Hashing Probing: 해시된 값을 한번 더 해싱하여 해시의 규칙성을 없애버리는 방식. 해싱된 값을 한번더 해싱하여 새로운 주소 할당. 더 많은 연산 
+    
     ![image](https://user-images.githubusercontent.com/71515744/178232498-82ec4987-571a-4533-bae4-4201ce41bd81.png)
     
     
