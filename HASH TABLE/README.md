@@ -14,7 +14,8 @@
     
 ## CONCEPTION
 
-HASH FUNCTION 종류
+
+### HASH FUNCTION 종류
     
 1. Division Method: 나눗셈을 이용하는 방법으로 입력값을 테이블의 크기로 나누어 계산한다. 
 테이블의 크기를 소수로 정하고 2의 제곱수와 먼 값을 사용해야 효과가 좋음
@@ -31,7 +32,7 @@ HASH FUNCTION 종류
 만약 동일 키에 같은 해시값이 나오는 겨 ㅇ우 충돌이 일어난다. 해당 문제를 해결하기 위해서 분리 연결법(Seperate Chaning)과 개방 주소법(Open Addressing)으로 
 두개로 나누어진다. 
     
-<분리 연결법(Seperate Chaining)>
+#### <분리 연결법(Seperate Chaining)>
     
 ![다운로드 (2)](https://user-images.githubusercontent.com/71515744/178233858-888faf5d-cd04-462d-b67b-2e29b707080a.png)
     
@@ -40,7 +41,7 @@ Seperate Chaining: 동일한 버킷의 데이터에 대해 자료구조를 활�
 캐시 효율성 감소.
     
     
-<개방 주소법(Open Addressing)>
+#### <개방 주소법(Open Addressing)>
     
     
 Open Addressing: 추가적인 메모리를 사용하지 않고 비워져 있는 해시 테이블 공간을 사용.
