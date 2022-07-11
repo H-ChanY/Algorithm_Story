@@ -9,7 +9,7 @@
     해시 테이블은 실제 저장된 키의 개수에 비례하는 크기를 가지는 배열을 사용한다. 
     실제 저장된 키의 개수가 가능한 키의 전체 개수보다 상대적으로 작은 경우 일반 배열에 직접 주소화 방법을 사용하는 것보다 효율적이다. 
 
-    ![image](https://user-images.githubusercontent.com/71515744/178230102-deb124b6-4b12-4e37-938c-c8164ac4a355.png)
+    ![다운로드 (1)](https://user-images.githubusercontent.com/71515744/178233757-ebc46fe9-963b-4fda-8d1d-2a118e700fc5.png)
     
     
 ## CONCEPTION
@@ -33,7 +33,7 @@
     
     <분리 연결법(Seperate Chaining)>
     
-    ![image](https://user-images.githubusercontent.com/71515744/178229987-18f4940a-a200-41a0-9172-4600ae38671b.png)
+    ![다운로드 (2)](https://user-images.githubusercontent.com/71515744/178233858-888faf5d-cd04-462d-b67b-2e29b707080a.png)
     
     Seperate Chaining: 동일한 버킷의 데이터에 대해 자료구조를 활용해 추가 메모리 사용하여 다음 데이터의 주소를 저장.
     해시 테이블의 확장이 필요없고 간단하게 구현 가능하고 쉽게 삭제 가능. 단 데이터가 많아지면 동일한 버킷에 chaining되는 데이터가 많아짐
@@ -51,7 +51,7 @@
         * Quadratic Probing: 해시의 저장순서 폭을 제곱으로 저장. 충돌 발생시 1만큼 이동 또 충돌 2^2 3^2 씩 옮김
         * Double Hashing Probing: 해시된 값을 한번 더 해싱하여 해시의 규칙성을 없애버리는 방식. 해싱된 값을 한번더 해싱하여 새로운 주소 할당. 더 많은 연산 
     
-    ![image](https://user-images.githubusercontent.com/71515744/178232498-82ec4987-571a-4533-bae4-4201ce41bd81.png)
+    ![다운로드](https://user-images.githubusercontent.com/71515744/178233864-435c0d81-07e5-4cd4-90e2-7c6c241256a1.png)
     
     
     
