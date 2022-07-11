@@ -36,11 +36,14 @@
     
 #### <분리 연결법(Seperate Chaining)>
     
-![다운로드 (2)](https://user-images.githubusercontent.com/71515744/178233858-888faf5d-cd04-462d-b67b-2e29b707080a.png)
-    
 Seperate Chaining: 동일한 버킷의 데이터에 대해 자료구조를 활용해 추가 메모리 사용하여 다음 데이터의 주소를 저장.
 해시 테이블의 확장이 필요없고 간단하게 구현 가능하고 쉽게 삭제 가능. 단 데이터가 많아지면 동일한 버킷에 chaining되는 데이터가 많아짐
 캐시 효율성 감소.
+    
+    
+![다운로드 (2)](https://user-images.githubusercontent.com/71515744/178233858-888faf5d-cd04-462d-b67b-2e29b707080a.png)
+    
+
     
     
 #### <개방 주소법(Open Addressing)>
